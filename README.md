@@ -2,3 +2,5 @@ config_files
 ============
 All of my config files for local env setup.
 
+i3_config: After setting arch on mac os, and i3wm (i3 tiling manager), use this config to make the mac keyboards keys work.
+
