@@ -1,0 +1,9 @@
+# Add to existing .i3/config to setup mac's keyboard keys
+
+exec --no-startup-id nm-applet
+bindsym XF86MonBrightnessDown exec xbacklight -dec 3
+bindsym XF86MonBrightnessUp exec xbacklight -inc 3
+bindsym XF86AudioMute exec amixer sset Master toggle
+bindsym XF86AudioLowerVolume exec amixer -q sset Master 5%-
+bindsym XF86AudioRaiseVolume exec amixer -q sset Master 5%+
+bindsym F7 exec $HOME/bin/xrandr_toggle.sh
