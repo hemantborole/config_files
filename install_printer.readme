@@ -1,0 +1,5 @@
+sudo pacman -S gutenprint
+sudo /usr/bin/cups-genppdupdate
+sudo pacman -S sane
+sudo systemctl restart org.cups.cupsd.service
+sudo system-config-printer
