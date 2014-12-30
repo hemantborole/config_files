@@ -54,11 +54,8 @@ let g:miniBufExplMapWindowNavArrows = 1
 set tags=$HOME/projects/ds/tags\ $HOME/projects/ar/tags
 
 let g:NeoComplCache_EnableAtStartup = 1   "To set auto completion on at startup
-imap <F7> #:NERDTreeToggle
-
-map <F7> #:NERDTreeToggle
 
 imap <F5> #:tab drop %
-
 map <F5> #:tab drop %
 
+map <leader>n :NERDTree<ENTER>
