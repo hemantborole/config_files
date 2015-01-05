@@ -7,3 +7,5 @@ i3_config: After setting arch on mac os, and i3wm (i3 tiling manager), use this 
 vimrc: Assumes nerdtree installed. Most basic settings to get started for dev
 
 50-synaptics.conf: mousepad settings for mac's touchpad
+
+dot_Xdefaults: X resources file for xterm settings. cp to home as .Xdefaults and execute xrdb -merge ~/.Xdefaults (or restart X)

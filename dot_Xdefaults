@@ -1,0 +1,32 @@
+!xterm*background: black
+!xterm*foreground: white
+
+XTerm*background: rgb:18/18/18
+XTerm*foreground: rgb:CC/CC/CC
+!Black
+XTerm*color0: rgb:48/48/48
+XTerm*color8: rgb:66/67/67
+!Red
+XTerm*color1: rgb:a1/75/6c
+XTerm*color9: rgb:d1/ac/a3
+!Green
+XTerm*color2:  rgb:71/91/71
+XTerm*color10: rgb:aa/d1/ac
+!Yellow
+XTerm*color3:  rgb:9c/98/69
+XTerm*color11: rgb:c3/c4/9f
+!Blue
+XTerm*color4:  rgb:71/86/a6
+XTerm*color12: rgb:a6/c0/de
+!Magenta
+XTerm*color5:  rgb:87/67/94
+XTerm*color13: rgb:be/a2/cf
+!Cyan
+XTerm*color6:  rgb:62/8c/85
+XTerm*color14: rgb:a1/d4/c2
+!White
+XTerm*color7:  rgb:CC/CC/CC
+XTerm*color15: rgb:ca/cb/cb
+
+XTerm*faceName: Monospace
+XTerm*faceSize: 10
