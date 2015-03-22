@@ -1,0 +1,9 @@
+#!/bin/bash
+apt-get update
+apt-get install libopenssl-ruby
+apt-get install facter
+apt-get -f install
+apt-get install rubygems1.9
+cd /opt/tpkg/client/trunk
+make debian
+dpkg -i tpkg-1.9.deb

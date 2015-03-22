@@ -1,0 +1,42 @@
+#!/bin/bash
+
+this_path=$(readlink -f $0)        ## Path of this file including filename
+dir_name=`dirname ${this_path}`    ## Dir where this file is
+myname=`basename ${this_path}`     ## file name of this script.
+logger="${myname}.log"
+
+function usage {
+  logit "$myname -n <new_branch_name>"
+  exit 1
+}
+
+function logit {
+  if [[ $quiet == "true" ]]
+  then
+    echo $1 1>> $logger
+  else
+    echo $1 |tee -a $logger
+  fi
+}
+
+logit "Initializing `date`"
+
+while getopts :hqfl:n: args
+do
+  case $args in
+  h) usage ;;
+  q) quiet='true' ;; ## Suppress messages, just log them.
+  f) force='true' ;;
+  l) logfile="$OPTARG" ;;
+  n) new_branch="$OPTARG"; echo "Creating new branch $new_branch" ;;
+  :) logit "The argument -$OPTARG requires a parameter" ;;
+  *) usage ;;
+  esac
+done
+
+
+if test -z $new_branch; then
+  usage
+else
+  echo "git checkout -b $new_branch && git push origin ${new_branch}:refs/heads/foo"
+fi

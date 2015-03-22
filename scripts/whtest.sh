@@ -1,0 +1,1 @@
+~/scripts/whtest.py --mode=stream --list=/tmp/audio.list --num-threads=1  'http://dungeon:9000/cicero/voice_search_for_businesses.plist?latitude=38.900000285635713&longitude=77.022684062588965' --hist=cpu_vs_audio --hist=frames

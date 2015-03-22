@@ -1,0 +1,7 @@
+/usr/lib/python2.6/dist-packages/S3/S3.py:9: DeprecationWarning: the md5 module is deprecated; use hashlib instead
+  import md5
+/usr/lib/python2.6/dist-packages/S3/S3.py:10: DeprecationWarning: the sha module is deprecated; use the hashlib module instead
+  import sha
+Could not find build for i686, linux, gcc4.3, py2.6. Skipping.
+Initializing Thu Oct 8 13:57:38 PDT 2009
+Marking watson installation

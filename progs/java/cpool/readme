@@ -1,0 +1,61 @@
+interface:
+* addDriver - Create Driver object and add to the carpool object
+  e.g.
+  
+  Driver d = new Driver("hemant");
+  Carpool pool = new Carpool();
+  pool.add(d);
+
+* showRoutes
+  pool.showRoutes();
+  // Returns a number list of possible routes with all drivers 
+  // added in the pool
+
+* nextDriver
+  // Once a 
+
+
+* Observation
+for n drivers in pool, the following possible combinations exists:
+
+3 => 3p2 + 2p2 = 3!/((3-2)! * 2!) + 2!/(2! * (2-2)!) = 3 + 1 = 4
+
+b g m
+b g
+b m
+g m
+
+
+4 => 4p2 + 4p3 + 4p4 = 6 + 4 + 1 = 11
+e.g
+a b c d
+a b c
+a b d
+a c d
+b c d
+a b
+a c
+a d
+b c
+b d
+c d
+
+5 => 5P5 + 5P4 + 5P3 + 5P2  = 1 + 5 + 10 + 10 = 26
+abcde => abcde, abcd, abce, abde, acde, bcde, abc, abd, abe, acd, ace, ade, bcd, bce, bed, cde, ab, ac, ad, ae, bc, bd, be, cd, ce, de
+
+n => nP2 + nP3 + ... + nPn = ( 2 ** n ) - (n+1)
+
+6 => 6P2 + 6P3 + 6P4 + 6P5 + 6P6 = 15 + 20 + 15 + 6 + 1 = 57 = 2^6 - 7 = 57
+
+
+Make a sorted list of drivers for each combination, total combinations = 2**n - (n+1)
+Use this list(string) as a key.
+e.g. for drivers b, a, d, c : key =  abcd 
+
+For this key, store the drivers in the order in which they drive as circular linked list
+abcd = b -> d -> a -> c -> b
+
+point to the most recent driver e.g. c, so the next turn is driver b
+
+(1 use to handle, manually editing the list when drivers switch turns)
+

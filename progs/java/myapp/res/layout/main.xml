@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:weightSum="1">
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Create your Carpool"
+            android:id="@+id/textView2" android:layout_weight="0.21"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="This is usually named by your final destination, e.g. office"
+            android:id="@+id/textView" android:layout_weight="0.21"/>
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/pool" android:layout_gravity="center_horizontal" android:layout_weight="0.21"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:text="Create"
+            android:onClick="createPool"
+            android:id="@+id/create" android:layout_gravity="center_horizontal" android:layout_weight="0.21"/>
+</LinearLayout>
+
